@@ -11,7 +11,7 @@ user_agent = 'Mozila/4.0'
 #Users Agent header
 url = 'http://www.github.com'
 full_url = url + '?' + values
-#GET方式，构建带参数的URL
+#GET 鏂瑰紡瀹炵幇
 #full URL is created by adding a ? to the URL, followed by the encoded values.
 data = urllib2.urlopen(full_url)
 page = data.read()

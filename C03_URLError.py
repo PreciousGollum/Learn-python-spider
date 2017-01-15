@@ -1,6 +1,6 @@
 import urllib2
 
-req = urllib2.Request('https://www.douyu.com/98653558')
+req = urllib2.Request('https://www.github.com/why.html')
 try:
     response = urllib2.urlopen(req)
 except urllib2.URLError, e:
@@ -8,9 +8,9 @@ except urllib2.URLError, e:
         print 'Reason:',e.reason
     elif hasattr(e,'code'):
         print 'code:'.e.code
-#URLErrorÒ»°ã¸ø³öÒ»¸ö´øÓĞreasonÊôĞÔµÄÃèÊö£¬°üº¬Ò»¸ö´íÎó´úÂë£¨error code£©ºÍÎÄ±¾´íÎóĞÅÏ¢£¨text error message£©
-#HTTPErrorÎª·şÎñÆ÷HTTPÏìÓ¦ÊÇµÄÊı×Ö×´Ì¬Âë£¨status code£©Èç404£¬503
-#URLErrorÎªHTTPErrorµÄÒ»¸ö×ÓÀà
+#URLErrorä¸€èˆ¬ç»™å‡ºä¸€ä¸ªå¸¦æœ‰reasonå±æ€§çš„æè¿°ï¼ŒåŒ…å«ä¸€ä¸ªé”™è¯¯ä»£ç ï¼ˆerror codeï¼‰å’Œæ–‡æœ¬é”™è¯¯ä¿¡æ¯ï¼ˆtext error messageï¼‰
+#HTTPErrorä¸ºæœåŠ¡å™¨HTTPå“åº”æ˜¯çš„æ•°å­—çŠ¶æ€ç ï¼ˆstatus codeï¼‰å¦‚404ï¼Œ503
+#URLErrorä¸ºHTTPErrorçš„ä¸€ä¸ªå­ç±»
 else:
     #everything is fine
     print 'fine'

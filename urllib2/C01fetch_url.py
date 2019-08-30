@@ -1,11 +1,10 @@
-import urllib2
+import urllib.request
+# urllib2 had been remove from python3,import urllib.request instead import import urllib2
 
-req = urllib2.Request('https://www.github.com')
-# req不可作为对象进行.read,但后续的urlopen可以简化
+response = urllib.request.urlopen('https://www.github.com')
 # you create a Request object that specifies the URL you want to fetch
-response = urllib2.urlopen(req)
+
 page = response.read()
-#response是类似与文件的对象（file-like object）
+#response锟斤拷锟斤拷锟斤拷锟斤拷锟侥硷拷锟侥讹拷锟斤拷file-like object锟斤拷
 #This response is a file-like object, which means you can for example call .read() on the response
-print page
-raw_input()
+print (page)
